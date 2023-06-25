@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Organizer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <button class="add-task-btn">Open Modal</button>
+    <div class="container">
+        <div class="column">
+            <h3>Not Started</h3>
+            <ul class="task-list" id="not-started"></ul>
+        </div>
+        <div class="column">
+            <h3>In Progress</h3>
+            <ul class="task-list" id="in-progress"></ul>
+        </div>
+        <div class="column">
+            <h3>Completed</h3>
+            <ul class="task-list" id="completed"></ul>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <form  id="add-task-form">
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" required>
+
+                <label for="priority">Priority:</label>
+                <select  id="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" required />
+
+                <label for="status">Status:</label>
+                <select  id="status" required>
+                    <option value="not-started">Not Started</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <button id="add-task-btn">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
