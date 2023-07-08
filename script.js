@@ -40,6 +40,7 @@ function populateTask(){
                                 <p>${item.Date}</p>
                                 <p>${item.status}</p>
                             </li>
+                            <button id="done">Mark Done </button>
                           `;
             }
             if(item.status === 'completed'){

@@ -158,3 +158,8 @@ body {
   form button[type="submit"]:hover {
     background-color: #0056b3;
   }
+/* for completion  */
+
+  #done{
+    width: 100%;
+  }
